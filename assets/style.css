@@ -160,7 +160,25 @@ nav .navlinks li a{
     color: #007cde;
     transform: rotate(360deg);
 }
-
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .site-footer a {
+    color: #555;
+    margin: 0 0.3rem;
+    text-decoration: none;
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  
 /* Responsive design and displaying nav bar for small screen */
 @media(max-width:930px){
     nav .togglebtn{

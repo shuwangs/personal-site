@@ -39,6 +39,11 @@
 
         </div>
     </div>
+
+
+    <div id="footer-placeholder"></div>
+
+
     <!--- typed js for typing text effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
     <script>
@@ -54,13 +59,22 @@
               this.classList.toggle('click');
               nav.classList.toggle('open');
             });
-          });
-          var typed = new Typed('.input', {
+
+            var typed = new Typed('.input', {
             strings: ['Web Developer','Software Developer', 'Data Analyst', 'Bioinformatician'],
             typeSpeed: 100,
             backSpeed: 55,
             loop: true
+});
+
         })
+
+        fetch('partials/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+      
     </script>
 
 </body>
